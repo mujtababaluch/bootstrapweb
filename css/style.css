@@ -1,0 +1,163 @@
+/* Genral CSSS */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+.navbar-brand{
+    color: darkblue;
+    font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+nav a:hover{
+    color: darkblue;
+}
+
+ .dropdown-item{
+    color: darkblue;
+}
+
+.dropdown-menu :hover{
+background-color: white;
+color: darkblue;
+} 
+
+.nav-link{
+    color: darkblue;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+.nav-link:hover{
+    color: white;
+ }
+.navbar-toggler{
+   color: transparent;
+}
+
+ .footer{
+    
+    color: white;
+    background-color: navy;
+ }
+
+ .footer h1{
+
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 32px;
+    margin-bottom: 20px;
+ }
+ .footer p{
+    font-size: 7px;
+ }
+ .address{
+    font-size: 14px;
+    font-weight: 300;
+ }
+
+ .footer ul li{
+    list-style: none;
+ }
+ .footer ul li > a{
+    text-decoration: none;
+    color: white;
+ }
+ 
+ .links {
+    margin-top: 5px;
+    margin-left: 32px;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ /* .dropdown:hover .dropdown-menu{
+    display: block;
+ } */
+.fa-bars{
+   color: black;
+}
+ /* Home Page Css */
+
+ .slidevideo{
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   height: 500px;
+   
+ }
+
+ .card-body{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
+.icon{
+   font-size: 50px;
+   color: rgb(247, 218, 5);
+   
+}
+.featureimg{
+   height: 350px;
+   background: url("../assets/slider-2.jpg");
+   background-size: 100%;
+   background-repeat: no-repeat;
+   background-position: center;
+   border-radius:10px;
+   transition: background-size 2s ease-in-out; 
+}
+.featureimg:hover{
+   background-size: 120%; /* Zoom in the background image */
+
+}
+.featureimg1{
+   height: 350px;
+   background: url("../assets/slide3.jpeg");
+   background-size: 100%;
+   background-repeat: no-repeat;
+   background-position: center;
+   border-radius:10px;
+   transition: all 2s ease-in-out ; 
+}
+.hdieshow{
+   display: none;
+}
+.featureimg1:hover{
+   background-size: 120%;
+   background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../assets/slide2.jpg");
+
+}
+.featureimg1:hover > .hdieshow{
+   display: block;
+   color: white;
+}
+.featureimg2{
+   height: 350px;
+   background: url("../assets/slide2.jpg");
+   background-size: 100%;
+   background-repeat: no-repeat;
+   background-position: center;
+   border-radius: 10px;
+   transition: background-size 2s ease-in-out;
+}
+.featureimg2:hover{
+   background-size: 120%; /* Zoom in the background image */
+
+}
+@media screen and (max-width:576px) {
+   .slidevideo{
+      margin: 0;
+      padding: 0;
+            height: 300px;
+      
+    }
+
+}
